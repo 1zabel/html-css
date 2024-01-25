@@ -7,16 +7,22 @@
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
-            text-align: center;
         }
 
         table {
             border-collapse: collapse;
-            width: 400px;
-            height: 200px;
+            width: 500px;
+            height: 250px;
         }
 
         th {
+            background-color: gray;
+        }
+
+        .cor1 {
+            background-color: white;
+        }
+        .cor2 {
             background-color: gray;
         }
 
@@ -31,23 +37,66 @@
     <table>
         <thead>
             <tr>
-                <th>Área</th>
-                <td>Exatas</td>
+                <th rowspan="2">Área</th>
+                <th colspan="2" rowspan="2">Disciplinas</th>
+                <th colspan="2">Notas</th>
+                <th rowspan="2">Média</th>
             </tr>
             <tr>
-                <th>Disciplinas</th>
-                <td>Matemática</td>
-                <td>Física</td>
-                <td>Química</td>
-                <td>Biologia</td>
+                <th>Nota 1</th>
+                <th>Nota 2</th> 
             </tr>
-            <tr>
-                <th>NOTAS</th>
-            </tr>
-
         </thead>
         <tbody>
+            <tr>
+                <th rowspan="5" scope="rowgroup" class="cor1">Exatas</th>
+            </tr>
+            <tr>
+                <td colspan="2">Biologia</td>
+                <td>0.0</td>
+                <td>0.0</td> 
+                <td>0.0</td> 
+            </tr>
+            <tr>
+                <td colspan="2">Matemática</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+               <td colspan="2">Física</td>
+               <td>0.0</td> 
+               <td>0.0</td> 
+               <td>0.0</td> 
 
+            </tr>
+            <tr>
+               <td colspan="2">Química</td>
+               <td>0.0</td>
+               <td>0.0</td> 
+               <td>0.0</td> 
+            </tr>
+            <tr>
+                <th colspan="5" scope="rowgroup">Média de Exatas</th>
+                <td class="cor2">0.0</td>
+            </tr>
+            <tr>
+                <th rowspan="2" scope="colgroup" class="cor1">Humanas</th>
+                <td colspan="2">História</td>
+                <td>0.0</td>
+                <td>0.0</td> 
+                <td>0.0</td> 
+            </tr>
+            <tr>
+                <td colspan="2">Geografia</td>
+                <td>0.0</td>
+                <td>0.0</td> 
+                <td>0.0</td> 
+            </tr>
+            <tr>
+                <th colspan="5" scope="row">Média de Humanas</th>
+                <td class="cor2">0.0</td>
+            </tr>
         </tbody>
     </table>
 </body>
